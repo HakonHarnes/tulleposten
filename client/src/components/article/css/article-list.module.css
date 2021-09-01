@@ -1,0 +1,56 @@
+@import url('../../../../css/colors.css');
+
+.content {
+   grid-area: content;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 500px;
+   grid-auto-rows: 350px;
+   justify-self: center;
+   grid-gap: 10px;
+   margin: 10px;
+   width: 70%;
+}
+
+.article-wrapper:first-child,
+.article-wrapper:last-child:nth-child(even) {
+   grid-column: -1 / 1;
+   font-size: 2.2em;
+}
+
+.article-wrapper {
+   display: grid;
+   grid-template-rows: 1fr auto;
+   grid-template-areas:
+      'image'
+      'title';
+   text-align: center;
+   font-size: 1.4em;
+   background-color: white;
+   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.article-wrapper:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.image-wrapper {
+   grid-area: image;
+   background-color: var(--black);
+   overflow: hidden;
+}
+
+.image-wrapper > img {
+   width: 100%;
+}
+
+.title {
+   grid-area: title;
+   margin: 10px;
+   color: var(--black);
+   text-decoration: none;
+   font-weight: bold;
+}

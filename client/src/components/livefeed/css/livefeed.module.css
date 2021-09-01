@@ -1,0 +1,57 @@
+@import url('../../../../css/colors.css');
+
+.livefeed {
+   display: grid;
+   grid-area: livefeed;
+   grid-template-columns: 35px 1fr;
+   grid-template-areas: 'dot items';
+   border-top: 1px solid var(--gray);
+   background-color: white;
+   -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+   -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.dot {
+   grid-area: dot;
+   height: 16px;
+   width: 16px;
+   background-color: var(--red);
+   border-radius: 50%;
+   place-self: center center;
+   animation: blink-animation 1s steps(5, start) infinite;
+   -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.dot:hover {
+   cursor: pointer;
+}
+
+@keyframes blink-animation {
+   to {
+      visibility: hidden;
+   }
+}
+@-webkit-keyframes blink-animation {
+   to {
+      visibility: hidden;
+   }
+}
+
+.news {
+   display: grid;
+   grid-area: items;
+   border-left: 1px solid var(--gray);
+   align-items: center;
+   white-space: nowrap;
+}
+
+.news-item {
+   display: inline;
+   font-size: 1em;
+   margin-left: 20px;
+}
+
+.news-item:hover {
+   cursor: pointer;
+}

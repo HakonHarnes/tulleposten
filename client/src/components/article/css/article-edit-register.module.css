@@ -1,0 +1,27 @@
+.container {
+   grid-area: content;
+   display: grid;
+   grid-template-areas:
+      'page-title'
+      'page-subtitle'
+      'article-form';
+   width: 70%;
+   justify-self: center;
+   margin: 20px 0px;
+}
+
+.page-title {
+   grid-area: page-title;
+   justify-self: center;
+   margin-bottom: 5px;
+}
+
+.page-subtitle {
+   grid-area: page-subtitle;
+   justify-self: center;
+   margin-bottom: 20px;
+}
+
+.article-form {
+   grid-area: article-form;
+}

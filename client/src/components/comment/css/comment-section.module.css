@@ -1,0 +1,29 @@
+.comments {
+   display: grid;
+   grid-area: comments;
+   grid-template-areas:
+      'comment-input'
+      'comment-list';
+   grid-gap: 40px;
+}
+
+.comment-input {
+   grid-area: comment-input;
+   display: grid;
+   grid-template-areas:
+      'comment-title'
+      'comment-form';
+   grid-gap: 10px;
+}
+
+.comment-title {
+   grid-area: comment-title;
+}
+
+.comment-form {
+   grid-area: comment-form;
+}
+
+.comment-list {
+   grid-area: comment-list;
+}

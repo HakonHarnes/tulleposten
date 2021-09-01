@@ -1,0 +1,26 @@
+@import url('../../../../css/colors.css');
+
+.text-input {
+   padding: 7px;
+   border: none;
+   border-radius: 5px;
+   color: var(--black);
+}
+
+.text-input-dark {
+   background-color: var(--input-color);
+}
+
+.text-input-light {
+   background-color: white;
+   border: 1px solid var(--gray);
+}
+
+.text-input:hover,
+.text-input:focus {
+   filter: brightness(98%);
+}
+
+.text-input::placeholder {
+   color: var(--dark-gray);
+}

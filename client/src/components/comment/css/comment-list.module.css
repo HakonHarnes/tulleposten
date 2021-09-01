@@ -1,0 +1,30 @@
+.comments {
+   display: grid;
+   grid-gap: 20px;
+}
+
+.comment {
+   display: grid;
+   grid-template-areas:
+      'nickname'
+      'text'
+      'published';
+}
+
+.nickname {
+   grid-area: nickname;
+   font-weight: bold;
+   font-size: 1em;
+}
+
+.text {
+   grid-area: text;
+   align-self: flex-start;
+   font-size: 1em;
+}
+
+.published {
+   grid-area: published;
+   font-weight: lighter;
+   font-size: 0.8em;
+}

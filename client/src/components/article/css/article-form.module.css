@@ -1,0 +1,76 @@
+.form {
+   grid-area: form;
+   display: grid;
+   grid-template-columns: 1fr auto;
+   grid-template-areas:
+      'title         title'
+      'author        author'
+      'image         image'
+      'caption       caption'
+      'lead          lead'
+      'text          text'
+      'category      priority'
+      'button-form   button-form';
+   grid-gap: 10px;
+}
+
+input,
+textarea,
+select,
+.priority {
+   font-size: 0.9em;
+}
+
+.title {
+   grid-area: title;
+   align-self: center;
+   font-size: 1.8em;
+   font-weight: bold;
+}
+
+.author {
+   grid-area: author;
+   align-self: center;
+}
+
+.image {
+   grid-area: image;
+   align-self: center;
+}
+
+.caption {
+   grid-area: caption;
+   align-self: center;
+   font-size: 0.9em;
+}
+
+.lead {
+   grid-area: lead;
+   align-self: center;
+   height: 200px;
+   font-weight: bold;
+}
+
+.text {
+   grid-area: text;
+   align-self: center;
+   height: 400px;
+}
+
+.category {
+   grid-area: category;
+   height: 35px;
+}
+
+select option[disabled]:first-child {
+   display: none;
+}
+
+.priority {
+   grid-area: priority;
+   align-self: center;
+}
+
+.button-form {
+   grid-area: button-form;
+}

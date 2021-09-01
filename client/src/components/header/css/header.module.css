@@ -1,0 +1,69 @@
+@import url('../../../../css/colors.css');
+
+.header {
+   display: grid;
+   grid-area: header;
+   grid-template-columns: auto repeat(4, auto) 1fr 180px;
+   grid-template-rows: 30px 50px;
+   grid-template-areas:
+      'title title title   title title title    title'
+      'logo  news  culture sport celeb register search';
+   background-color: white;
+}
+
+.title {
+   display: grid;
+   grid-area: title;
+   background-color: var(--black);
+}
+
+.title > p {
+   margin: 0;
+   color: white;
+   place-self: center center;
+}
+
+.logo {
+   grid-area: logo;
+   background-color: var(--blue);
+   color: white;
+   margin: 0;
+   padding: 0 10px;
+   border: none;
+   border-radius: 0px;
+   font-size: 1.8em;
+   font-weight: bold;
+}
+
+.logo:hover {
+   background-color: var(--dark-blue);
+   cursor: pointer;
+}
+
+.news {
+   grid-area: news;
+}
+
+.culture {
+   grid-area: culture;
+}
+
+.sport {
+   grid-area: sport;
+}
+
+.celeb {
+   grid-area: celeb;
+}
+
+.register {
+   grid-area: register;
+   justify-self: end;
+}
+
+.search {
+   grid-area: search;
+   margin: 0px 20px;
+   font-size: 0.9em;
+   align-self: center;
+}

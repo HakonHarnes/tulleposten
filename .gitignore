@@ -1,0 +1,4 @@
+node_modules
+client/public/bundle.js
+.DS_Store
+.vscode

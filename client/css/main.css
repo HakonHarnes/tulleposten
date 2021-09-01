@@ -1,0 +1,19 @@
+@import url('colors.css');
+
+body {
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+   color: var(--black);
+}
+
+.container {
+   display: grid;
+   grid-template-rows: auto 30px 1fr 100px;
+   grid-template-areas:
+      'header'
+      'livefeed'
+      'content'
+      'footer';
+   min-height: 100vh;
+   background-color: var(--light-gray);
+}

@@ -1,0 +1,26 @@
+@import url('../../../../css/colors.css');
+
+.footer {
+   grid-area: footer;
+   display: grid;
+   grid-template-areas:
+      'title'
+      'subtitle';
+   justify-items: center;
+   grid-gap: 10px;
+   background-color: var(--black);
+   color: white;
+}
+
+.footer > h2 {
+   grid-area: title;
+   align-self: end;
+   margin: 0;
+}
+
+.footer > p {
+   grid-area: subtitle;
+   font-weight: normal;
+   align-self: start;
+   margin: 0;
+}

@@ -1,0 +1,30 @@
+.form {
+   grid-area: form;
+   display: grid;
+   grid-template-columns: 1fr auto;
+   grid-template-areas:
+      'nickname    nickname'
+      'text        text'
+      'button-form button-form';
+   grid-gap: 10px;
+}
+
+input,
+textarea {
+   font-size: 0.9em;
+}
+
+.nickname {
+   grid-area: nickname;
+   align-self: center;
+}
+
+.text {
+   grid-area: text;
+   align-self: center;
+   height: 150px;
+}
+
+.button-form {
+   grid-area: button-form;
+}

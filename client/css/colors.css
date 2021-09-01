@@ -1,0 +1,16 @@
+:root {
+   --black: #26292a;
+   --black-light: #3e4142;
+
+   --gray: #c9c9c9;
+   --dark-gray: #797979;
+   --light-gray: #f3f3f3;
+
+   --input-color: #e7e7e7;
+
+   --blue: #006c9e;
+   --dark-blue: #00608d;
+
+   --red: #e00000;
+   --dark-red: #b90000;
+}

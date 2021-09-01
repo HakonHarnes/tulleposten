@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<button
+  className="button button button-neutral"
+  data-testid="button-neutral"
+  onClick={[Function]}
+  type="button"
+>
+  Click me!
+</button>
+`;

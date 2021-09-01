@@ -1,0 +1,59 @@
+@import url('../../../../css/colors.css');
+
+.button {
+   padding: 15px;
+   border: none;
+   border-radius: 10px;
+   font-size: 0.9em;
+   font-weight: 600;
+}
+
+.button:hover {
+   cursor: pointer;
+}
+
+.button-menu {
+   height: 100%;
+   margin: 0px 10px;
+   font-size: 0.9em;
+   font-weight: bold;
+   border: none;
+   color: var(--black);
+   background-color: transparent;
+}
+
+.button-menu:hover {
+   text-decoration: underline;
+}
+
+.button-menu:focus {
+   text-decoration: underline;
+}
+
+.button-submit {
+   background-color: var(--blue);
+   color: white;
+}
+
+.button-submit:hover {
+   background-color: var(--dark-blue);
+}
+
+.button-danger {
+   background-color: var(--red);
+   color: white;
+}
+
+.button-danger:hover {
+   background-color: var(--dark-red);
+   color: white;
+}
+
+.button-neutral {
+   background-color: var(--black);
+   color: white;
+}
+
+.button-neutral:hover {
+   background-color: var(--black-light);
+}

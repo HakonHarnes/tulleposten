@@ -1,0 +1,116 @@
+@import url('../../../../css/colors.css');
+
+.content {
+   display: grid;
+   grid-area: content;
+   justify-self: center;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas:
+      'image             image'
+      'caption           caption'
+      'title             title'
+      'lead              lead'
+      'info              info'
+      'button-edit       button-delete'
+      'rating            rating'
+      'text              text'
+      'comment-section   comment-section';
+   grid-gap: 10px;
+   margin: 10px 0 40px 0;
+   width: 70%;
+}
+
+h1,
+h2,
+p {
+   margin: 0;
+}
+
+.image-wrapper {
+   grid-area: image;
+   min-height: 200px;
+   max-height: 600px;
+   overflow: hidden;
+}
+
+.image-wrapper > img {
+   width: 100%;
+}
+
+.caption {
+   grid-area: caption;
+   color: var(--black);
+   font-size: 1em;
+   font-weight: lighter;
+}
+
+.title {
+   grid-area: title;
+   align-self: start;
+   font-size: 2.6em;
+   letter-spacing: -1px;
+   color: var(--black);
+}
+
+.lead {
+   grid-area: lead;
+   margin: 15px 0px;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+
+.info {
+   grid-area: info;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas:
+      'reading-time reading-time reading-time'
+      'author       published    edited';
+   font-weight: lighter;
+   font-size: 1em;
+   color: var(--black);
+   border-bottom: 1px solid var(--gray);
+}
+
+.reading-time {
+   grid-area: reading-time;
+   justify-self: center;
+}
+
+.author {
+   grid-area: author;
+}
+
+.published {
+   grid-area: published;
+   justify-self: center;
+}
+
+.edited {
+   grid-area: edited;
+   justify-self: end;
+}
+
+.button-edit {
+   grid-area: button-edit;
+}
+
+.button-delete {
+   grid-area: button-delete;
+}
+
+.rating {
+   grid-area: rating;
+   justify-self: center;
+   text-align: center;
+}
+
+.text {
+   grid-area: text;
+   margin: 15px 0px;
+   font-size: 1em;
+}
+
+.comment-section {
+   grid-area: comment-section;
+}

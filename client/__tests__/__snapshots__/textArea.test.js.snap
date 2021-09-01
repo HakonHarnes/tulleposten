@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<textarea
+  className="area text-area text-area-light"
+  data-testid="text-area-light"
+  onChange={[MockFunction]}
+  required={false}
+  value="Vetle"
+/>
+`;

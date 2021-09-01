@@ -1,0 +1,27 @@
+@import url('../../../../css/colors.css');
+
+.text-area {
+   padding: 7px;
+   border: none;
+   border-radius: 5px;
+   font-family: 'Roboto', sans-serif;
+   color: var(--black);
+}
+
+.text-area-dark {
+   background-color: var(--input-color);
+}
+
+.text-area-light {
+   background-color: white;
+   border: 1px solid var(--gray);
+}
+
+.text-area:hover,
+.text-area:focus {
+   filter: brightness(98%);
+}
+
+.text-area::placeholder {
+   color: var(--dark-gray);
+}

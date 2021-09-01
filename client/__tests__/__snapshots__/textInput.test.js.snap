@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<input
+  className="input text-input text-input-light"
+  data-testid="text-input-light"
+  onChange={[MockFunction]}
+  required={false}
+  type="text"
+  value="Vetle"
+/>
+`;
