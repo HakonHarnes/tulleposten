@@ -1,6 +1,6 @@
 # Tulleposten - an online community news paper
 
-Assignment in TDAT2003 - Systemutvikling 2, autumn 2019
+Assignment in TDAT2003 - Systemd developement 2, autumn 2019
 
 ## How to run
 
